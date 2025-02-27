@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESG 測驗 - ESGEXAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ESG 測驗</h1>
+        <div id="question-container">
+            <p id="question-number"></p>
+            <p id="question-text"></p>
+            <div id="options">
+                <p><span>1. </span><span id="option1"></span></p>
+                <p><span>2. </span><span id="option2"></span></p>
+                <p><span>3. </span><span id="option3"></span></p>
+                <p><span>4. </span><span id="option4"></span></p>
+            </div>
+            <div id="answer-section">
+                <p id="answer-label">輸入答案 (1-4)</p>
+                <input type="number" id="user-answer" min="1" max="4">
+                <span id="result"></span>
+            </div>
+        </div>
+        <div id="end-screen" style="display: none;">
+            <h2>測驗完成！</h2>
+            <p>OK</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
